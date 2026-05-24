@@ -11,13 +11,14 @@
       margin:0;
       padding:0;
       box-sizing:border-box;
-      font-family: Georgia, serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     body{
-      background:#f2f2f2;
+      background:linear-gradient(to bottom,#111,#1b1b1b);
       text-align:center;
       overflow-x:hidden;
+      color:white;
     }
 
     .container{
@@ -28,24 +29,28 @@
     }
 
     .top-title{
-      color:#57d6d1;
-      font-size:58px;
+      color:#00ffe1;
+      font-size:60px;
       margin-top:10px;
-      font-weight:500;
+      font-weight:800;
+      letter-spacing:3px;
+      text-shadow:0 0 15px #00ffe1;
     }
 
     .sub-title{
-      color:#57d6d1;
-      font-size:48px;
-      margin:90px 0 40px;
-      font-weight:500;
+      color:#ffffff;
+      font-size:40px;
+      margin:50px 0 35px;
+      font-weight:600;
+      text-transform:uppercase;
+      letter-spacing:2px;
     }
 
     .banner{
       width:100%;
-      border-radius:40px;
+      border-radius:35px;
       overflow:hidden;
-      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+      box-shadow:0 0 25px rgba(0,255,225,0.4);
     }
 
     .banner img{
@@ -56,70 +61,86 @@
     .join-btn{
       width:100%;
       margin-top:40px;
-      background:#20c8cf;
-      border-radius:40px;
+      background:linear-gradient(135deg,#00ffe1,#0099ff);
+      border-radius:50px;
       padding:18px 10px;
       font-size:34px;
       color:white;
       cursor:pointer;
-      box-shadow:0 6px 0 #116b93;
+      box-shadow:0 8px 20px rgba(0,255,225,0.4);
       transition:0.2s;
       display:block;
       text-decoration:none;
       text-align:center;
+      font-weight:bold;
+      text-transform:uppercase;
     }
 
     .join-btn span{
       display:block;
-      font-size:22px;
-      margin-top:-5px;
+      font-size:18px;
+      margin-top:2px;
+      letter-spacing:2px;
+    }
+
+    .join-btn:hover{
+      transform:scale(1.03);
     }
 
     .join-btn:active{
-      transform:translateY(3px);
-      box-shadow:0 3px 0 #116b93;
+      transform:scale(0.98);
     }
 
     .timer{
       display:flex;
       justify-content:center;
-      gap:35px;
-      margin:40px 0;
-      color:#57d6d1;
+      gap:25px;
+      margin:45px 0;
+    }
+
+    .time-box{
+      background:#1f1f1f;
+      padding:15px 18px;
+      border-radius:20px;
+      min-width:90px;
+      box-shadow:0 0 15px rgba(0,255,225,0.2);
     }
 
     .time-box h2{
-      font-size:42px;
+      font-size:40px;
       font-weight:bold;
+      color:#00ffe1;
     }
 
     .time-box p{
-      font-size:18px;
+      font-size:14px;
       line-height:1.2;
       letter-spacing:1px;
+      color:#d7d7d7;
+      margin-top:5px;
     }
 
     .description{
-      color:#57d6d1;
-      font-size:32px;
-      line-height:1.2;
-      font-weight:600;
-      margin-top:20px;
+      color:#ffffff;
+      font-size:24px;
+      line-height:1.5;
+      font-weight:500;
+      margin-top:15px;
       padding:0 10px;
     }
 
     @media(max-width:480px){
 
       .top-title{
-        font-size:42px;
+        font-size:45px;
       }
 
       .sub-title{
-        font-size:34px;
+        font-size:28px;
       }
 
       .description{
-        font-size:24px;
+        font-size:20px;
       }
 
       .join-btn{
@@ -127,7 +148,11 @@
       }
 
       .time-box h2{
-        font-size:32px;
+        font-size:30px;
+      }
+
+      .time-box{
+        min-width:75px;
       }
 
     }
@@ -142,41 +167,71 @@
 
     <h1 class="top-title">SURESHOT</h1>
 
-    <h2 class="sub-title">only vip channel</h2>
+    <h2 class="sub-title">ONLY VIP CHANNEL</h2>
 
     <div class="banner">
-  <img src="6a1296c77616b3.02391022_014100664-33937-file_20260429134100646.webp" alt="VIP Banner">
+      <img src="6a1296c77616b3.02391022_014100664-33937-file_20260429134100646.webp" alt="VIP Banner">
     </div>
 
     <a href="https://t.me/+YKmXg6fnlg1kNzI1" target="_blank" class="join-btn">
-      join
-      <span>vip</span>
+      JOIN
+      <span>VIP NOW</span>
     </a>
 
     <div class="timer">
 
       <div class="time-box">
-        <h2>11</h2>
+        <h2 id="hours">00</h2>
         <p>HOURS</p>
       </div>
 
       <div class="time-box">
-        <h2>14</h2>
+        <h2 id="minutes">00</h2>
         <p>MINUTES</p>
       </div>
 
       <div class="time-box">
-        <h2>59</h2>
+        <h2 id="seconds">00</h2>
         <p>SECONDS</p>
       </div>
 
     </div>
 
     <div class="description">
-      new game 13l game bhot pasa de ra he jisko vi pasa kamana he join kar lo deaiy 4000-5000 aramse kama paooo gi jisko vi kamana he join kar lo ey channel kuch din publick rahaga
+      New 13L game is giving huge profits 💸<br><br>
+      Daily ₹4000-₹5000 easily earn kar sakte ho 🔥<br><br>
+      Jisko bhi earning karni hai jaldi join karo because ye channel sirf kuch din public rahega 🚀
     </div>
 
   </div>
+
+  <script>
+
+    let countdownDate = new Date().getTime() + (11 * 60 * 60 * 1000) + (14 * 60 * 1000) + (59 * 1000);
+
+    let timer = setInterval(function() {
+
+      let now = new Date().getTime();
+      let distance = countdownDate - now;
+
+      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
+      document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
+      document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
+
+      if (distance < 0) {
+        clearInterval(timer);
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+      }
+
+    }, 1000);
+
+  </script>
 
 </body>
 </html>
